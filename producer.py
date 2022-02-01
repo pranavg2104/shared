@@ -41,7 +41,7 @@ if __name__ == "__main__":
   endTime = endTime.text
   endTime = endTime[:4] + '-' + endTime[4:6] + '-' + endTime[6:11] + ':' + endTime[11:13] + ':' + endTime[13:]
   et = endTime.replace("T"," ")
-  print(endTime)
+  print(et)
 
   #kafkaProducer(sys.argv[1],startTime,finishTime,int(duration.text)/(1000*3600),status.text)
 
