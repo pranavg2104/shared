@@ -21,14 +21,14 @@ def kafkaProducer(feature,start,end,duration,status):
 
 if __name__ == "__main__":
   status = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/status",auth = HTTPBasicAuth('admin','admin'))
-  startTime = sys.argv[2]
+  startTime = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/startDate",auth = HTTPBasicAuth('admin','admin'))
   endTime = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/finishDate",auth = HTTPBasicAuth('admin','admin'))
-  print(status.text)
+  duration = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/statistics/BuildDuration",auth = HTTPBasicAuth('admin','admin'))
+    
   """finishDate = endTime.text[:8]
   finishDate = finishDate[:4] + '-' + finishDate[4:6] + '-' + finishDate[6:]
   print(finishDate)
   finishTime = endTime.text[9:15]
-  duration = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/statistics/BuildDuration",auth = HTTPBasicAuth('admin','admin'))
   startTime = startTime[:2] + ':' + startTime[2:4] + ':' + startTime[4:] 
   print(startTime)
   finishTime = finishTime[:2] + ':' + finishTime[2:4] + ':' + finishTime[4:] 
@@ -40,9 +40,20 @@ if __name__ == "__main__":
 
   endTime = endTime.text
   endTime = endTime[:4] + '-' + endTime[4:6] + '-' + endTime[6:11] + ':' + endTime[11:13] + ':' + endTime[13:]
-  et = endTime.replace("T"," ")
-  print(et)
+  endTime = endTime.replace("T"," ")
+    
+  startTime = startTime.text
+  startTime = startTime[:4] + '-' + startTime[4:6] + '-' + startTime[6:11] + ':' + startTime[11:13] + ':' + startTime[13:]
+  startTime = startTime.replace("T"," ")
 
+  print("Start Time is ",startTime)
+  print("End Time is ",endTime)
+  print("Total Duration is ",int(duration.text)/(1000*3600))
+  print("Status is ",status.text)
+  print("Pipeline is ",sys.argv[1])
+  
+
+  
   #kafkaProducer(sys.argv[1],startTime,finishTime,int(duration.text)/(1000*3600),status.text)
 
 
