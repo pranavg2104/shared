@@ -24,7 +24,7 @@ if __name__ == "__main__":
   startTime = sys.argv[2]
   endTime = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/finishDate",auth = HTTPBasicAuth('admin','admin'))
   print(status.text)
-  finishDate = endTime.text[:8]
+  """finishDate = endTime.text[:8]
   finishDate = finishDate[:4] + '-' + finishDate[4:6] + '-' + finishDate[6:]
   print(finishDate)
   finishTime = endTime.text[9:15]
@@ -36,7 +36,11 @@ if __name__ == "__main__":
   print(int(duration.text)/(1000*3600))
   startDate = sys.argv[3]
   startDate = startDate[:4] + '-' + startDate[4:6] + '-' + startDate[6:]
-  print(startDate)
+  print(startDate)"""
+
+  endTime = endTime.text
+  endTime = endTime[:4] + '-' + endTime[4:6] + '-' + endTime[6:11] + ':' + endTime[11:13] + ':' + endTime[:13]
+  print(endTime)
 
   #kafkaProducer(sys.argv[1],startTime,finishTime,int(duration.text)/(1000*3600),status.text)
 
