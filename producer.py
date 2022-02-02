@@ -24,12 +24,14 @@ if __name__ == "__main__":
   startTime = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/startDate",auth = HTTPBasicAuth('admin','admin'))
   endTime = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/finishDate",auth = HTTPBasicAuth('admin','admin'))
   duration = requests.get("http://192.168.0.106:8111/app/rest/builds/buildType:"+sys.argv[1]+"/statistics/BuildDuration",auth = HTTPBasicAuth('admin','admin'))
+  feature = sys.argv[2]
 
   print("Start Time is ",startTime.text)
   print("End Time is ",endTime.text)
   print("Total Duration is ",int(duration.text)/(1000*3600))
   print("Status is ",status.text)
   print("Pipeline is ",sys.argv[1])
+  print("Feature is ",sys.argv[2])
   
 
   
