@@ -1,7 +1,4 @@
 from flask import Flask,json,jsonify
-#from flask_restful import Api, Resource
-
-app=Flask(__name__)
   
 @app.route("/")
 def getEmployeeList():
