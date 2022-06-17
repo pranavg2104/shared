@@ -16,7 +16,3 @@ def getEmployeeList():
         # convert to json data
         jsonStr = json.dumps(employeeList)
     return jsonify(Employees=jsonStr)
-
-if __name__=='__main__':
-    app.run(debug=True)
-#new commit 
