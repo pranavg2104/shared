@@ -6,6 +6,7 @@ from time import sleep
 from json import dumps
 from kafka import KafkaProducer
 
+#commit different
 
 def kafkaProducer(feature,start,end,duration,status):
 
