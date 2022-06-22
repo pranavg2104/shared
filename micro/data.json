@@ -1,0 +1,22 @@
+{
+ "data": [
+  {
+   "metadata": "Build ",
+   "build": 213,
+   "job": "Kafka test",
+   "message": "SUCCESS"
+  },
+  {
+   "metadata": "Build ",
+   "build": 214,
+   "job": "Kafka test",
+   "message": "SUCCESS"
+  },
+  {
+   "metadata": "Build ",
+   "build": 219,
+   "job": "Kafka test",
+   "message": "SUCCESS"
+  }
+ ]
+}

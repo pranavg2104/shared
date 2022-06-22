@@ -1,0 +1,4 @@
+flask
+simplejson
+kafka-python
+gunicorn
