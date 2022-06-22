@@ -1,0 +1,8 @@
+{
+    "dpa_file" : "LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo\\LightControl.dpa",
+    "dll_path" : "LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo\\SUT\\BFC.dll",
+    "sln_path" : "LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo\\Solution\\LightControl.sln",
+    "additional_file" : true,
+    "additional_files_path" : ["Arbitration.c"],
+    "microsar_sip_foler" : "D:\\Pranav\\CBD1800888_D05"
+}
