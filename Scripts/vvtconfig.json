@@ -1,0 +1,14 @@
+{
+	"vvt_project_path" : "LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\LightControl.vttproj",
+    "dll_path" : "LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\SUT\\BFC.dll",
+    "sln_path" : "LLightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\Solution\\LightControl.sln",
+    "additional_file" : false,
+    "additional_files_path" : ["LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\Arbitration_Code\\rtwtypes.h","LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\Appl\\Source\\IoHwAb.c","LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\Arbitration_Code_NoAdc\\Arbitration.c","LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\Arbitration_Code_NoAdc\\Arbitration.h","LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\Arbitration_Code_NoAdc\\Arbitration_private.h","LightControl_Arbitration_Demo_BackUp_04_12\\LightControl_Arbitration_Demo_BackUp\\LightControl_Arbitration_Demo\\Arbitration_Code_NoAdc\\Arbitration_types.h","C:\\Program Files\\Vector\\CBD1800888_D05\\LightControl\\Appl\\Source\\OS_Callout_Stubs.c","C:\\Program Files\\Vector\\CBD1800888_D05\\LightControl\\Appl\\Source\\Main.c","C:\\Program Files\\Vector\\CBD1800888_D05\\LightControl\\Appl\\Source\\BSW_Handler.c"],
+	"target_platform" : 0,
+	"verbose_level" : 2,
+	"compiler_version" : "Visual Studio 2017",
+	"generate_csv" : true,
+	"generate_solution" : true,
+	"validate_source_files" : true,
+	"debug_version" : true
+}
